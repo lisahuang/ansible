@@ -1,0 +1,10 @@
+- name: My first play
+  hosts: localhost
+  connection: local
+  gather_facts: true
+ 
+  tasks:
+      - name: Create a file
+        copy:
+            dest: "/tmp/test.txt"
+            content: "This is some content"

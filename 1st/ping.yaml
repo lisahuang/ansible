@@ -1,0 +1,7 @@
+---
+- hosts: sandbox
+  connection: ssh
+  gather_facts: true
+  tasks:
+  - name: ping
+    action: ping
