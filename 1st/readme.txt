@@ -17,7 +17,7 @@ ansible 2.2.1.0
 
 file <<hosts>>:
 [sandbox]
-10.64.226.55
+10.1.226.55
 
 >>ansible all -i hosts -m ping -u lisa.huang --ask-pass
 
