@@ -23,7 +23,7 @@ file <<hosts>>:
 
 $ ansible all -i ../hosts -m ping -u lisa.huang --ask-pass
 SSH password:
-10.64.226.55 | SUCCESS => {
+10.1.226.55 | SUCCESS => {
     "changed": false,
     "ping": "pong"
 }
@@ -46,7 +46,6 @@ SSH password:
 
 5. create a file remotely
 (env) SFO1502639594:1st 502639594$ more jumpbox.yaml
-- name: My first play
   hosts: jumpbox
   connection: ssh
   gather_facts: true
@@ -67,7 +66,7 @@ brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Librar
 2. ansible 2.2.1 needs vars in hosts file
 (env) SFO1502639594:1st 502639594$ more ../jumpbox
 [jumpbox]
-10.128.36.120
+10.1.36.120
 
 [jumpbox:vars]
 ansible_password=password
